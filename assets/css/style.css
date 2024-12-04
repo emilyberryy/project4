@@ -1,0 +1,124 @@
+/* css Zen Garden default style v1.02 */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+
+html {
+	margin: 0;
+	padding: 0;
+	}
+    
+*{box-sizing: border-box;}
+
+@font-face{
+    font-family:"Alegreya";
+    src: url(../fonts/AlegreyaSansSC-Regular.otf)
+}
+
+body {
+    background: #FFD98E;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+header{
+    background: url(../images/header.jpg) no-repeat;
+    width: 100%;
+    height: 230px;
+    text-indent: 30%;
+    color:#FFF3B6;
+    font-family:"Alegreya";
+
+    white-space: nowrap;
+	overflow: hidden;
+}
+header h1,h2{
+    padding-top: 30px;
+}
+
+.preamble, .main-supporting, .summary{
+    margin-left: 90px;
+    margin-right:10%;
+    padding-top: 20px;
+    max-width: 65%;
+    float:left;
+}
+.sidebar {
+    float:right;
+    position:absolute;
+	top: 0; 
+	right: 0;
+    width: 25%;
+    clear:both;
+}
+
+.sidebar .wrapper {
+    padding: 20px; 
+    margin-top: 230px;  
+    height: 178vh;
+    background-color:rgba(255, 242, 201, 0.3);
+    line-height: 140%;
+}
+
+.design-selection{
+    margin-top: 35%;
+}
+
+.design-archives{
+    margin-top:20%;
+}
+
+.zen-resources{
+    margin-top: 30%;
+}
+
+h3{
+    color:#114290;
+    font-family:"Alegreya", sans-serif;
+}
+
+a{
+    color:#DA8A05;
+}
+a:hover{
+    color: #114290;
+}
+a:visited{
+    color:#2C2E33;
+}
+.preamble, .main-supporting {
+    background: url(../images/paragraph-background.jpg);
+    display:inline-block;
+    padding: 0 20px 10px 20px;
+}
+
+footer {
+    background-color: #2C2E33;
+    text-align: center;
+    width: 100%; 
+    margin: 0; 
+    padding: 10px;  
+    word-spacing: 1em;
+}
+
+footer a{
+    color: antiquewhite;
+}
+
+footer a:hover{
+    color:#DA8A05;
+}
+
+footer a:visited{
+    color:azure;
+}
+
+@media screen and (max-width: 700px) {
+    .sidebar {
+        float: none;
+        position: static;
+        min-width: 65%;   
+        margin-left: 90px;
+    }
+    .sidebar .wrapper{
+        padding-top: 0;
+        height: 100vh;
+    }
+
+}
